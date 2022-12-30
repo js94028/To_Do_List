@@ -54,7 +54,7 @@ body section div.todo {
   display: flex;
   align-items: center;
   background-color: rgb(248, 241, 215);
-  width: 49vw;
+  width: 500px;
   transition: all 0.2s ease;
 }
 body section div.todo p {
@@ -119,16 +119,21 @@ body section div.todo button.trash {
 }
 @media screen and (max-width: 700px) {
   body section div.todo {
-    width: 85vw;
-    font-size: 1.5rem;
+    width: 80vw;
+    font-size: 4vw;
   }
   body section div.todo p.todo-text {
-    width: 40%;
+    width: 42%;
   }
   body section div.todo p.todo-time {
-    width: 30%;
+    width: 22%;
   }
   body section div.todo button {
     font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  body section div.todo {
+    font-size: 1.2rem;
   }
 }/*# sourceMappingURL=style.css.map */
