@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Acme", sans-serif;
+}
+
+body {
+  background-color: #45bc90;
+}
+body header {
+  font-size: 2rem;
+  color: #ebb001;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+body input,
+body button {
+  border: none;
+  font-size: 1.6rem;
+  padding: 0.6rem;
+  margin: 0.3rem;
+  border-radius: 0.5rem;
+}
+body input[type=number] {
+  width: 100px;
+  text-align: center;
+}
+body button {
+  color: white;
+  font-weight: 600;
+  background-color: #1a784c;
+  cursor: pointer;
+}
+body section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body section div.todo {
+  border-radius: 0.3rem;
+  margin: 0.5rem;
+  font-size: 1.75rem;
+  display: flex;
+  align-items: center;
+  background-color: rgb(248, 241, 215);
+  width: 49vw;
+  transition: all 0.2s ease;
+}
+body section div.todo p {
+  margin: 0.5rem;
+  padding: 0.25rem 0.5rem;
+}
+body section div.todo p.todo-text {
+  width: 45%;
+  word-break: break-all;
+  text-align: left;
+}
+body section div.todo p.todo-time {
+  width: 25%;
+}
+body section div.todo button {
+  cursor: pointer;
+  font-size: 1.9rem;
+  background-color: rgb(248, 241, 215);
+}
+body section div.todo button i {
+  pointer-events: none;
+}
+body section div.todo button.complete {
+  color: green;
+}
+body section div.todo button.trash {
+  color: red;
+}
+
+.done {
+  opacity: 0.7;
+  text-decoration: line-through;
+  text-decoration-thickness: 0.2rem;
+}
+
+@-webkit-keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes scaledown {
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes scaledown {
+  to {
+    transform: scale(0);
+  }
+}
+@media screen and (max-width: 700px) {
+  body section div.todo {
+    width: 85vw;
+    font-size: 1.5rem;
+  }
+  body section div.todo p.todo-text {
+    width: 40%;
+  }
+  body section div.todo p.todo-time {
+    width: 30%;
+  }
+  body section div.todo button {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
